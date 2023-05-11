@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CBA-JAMF Advanced Reporting</title>
+	<link rel="stylesheet" type="text/css" href="../css/grid.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  
+
+
+<!--   <header>JAR APP&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Enrollment</header>
+ -->
+    <header>CBA JAR DASHBOARD</header>
+<div class="settings">
+<ul class="list ">
+  <div class="dropdown" style="float:right;">
+  <!-- <li>26</li> -->
+  <li class="dropbtn"><img src = "../img/user.png"></li>
+  <div class="dropdown-content">
+    <a href="#">Profile</a>
+    <a href="#" id="index-logout">Logout</a>
+  </div>
+</div>
+  </ul>   
+</div>
+
+
+
+
+      
+
+<nav>
+   <h5 class="main-title">COMMONWEALTH BANK OF AUSTRALIA</h5> 
+   <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+   <h5>ENROLLMENT</h5>
+      <ul>
+
+      <li><a href="./main.html"><i class="fi fi-brands-microsoft"></i>&nbsp&nbsp&nbspDevice Enrollment</li>
+      </ul>
+
+      <h5>CONTENT MANAGEMENT</h5>
+      <ul>
+      <li><a href="../packages.html"><i class="fi fi-bs-box-open"></i>&nbsp&nbsp&nbspPackages</a></li>
+      <li> <a href="../policies.html"><i class="fi fi-ss-move-to-folder"></i>&nbsp&nbsp&nbspPolicies</a></li>
+      <li> <a href="../api.html"><i class="fi fi-ss-api"></i>&nbsp&nbsp&nbspAPI Usage</a></li>
+    </ul>
+    </nav>
+ </nav>
+
+	<div id="main-content">
+			<div class="first">
+   		<div class="div-1">Today-Enrollment</div>
+   		<div class="div-2">Yesterday-Enrollment</div>
+   		<div class="div-3">11</div>
+     </div>
+
+			<div class="second">
+   		<div class="div-1">This Week-Enrollment</div>
+   		<div class="div-2">This Month</div>
+     </div>
+		<div class="third">
+   		<div class="div-2">Last Month-Enrollment</div>
+   		<div class="div-2">Whole Year-Enrollment</div>
+     </div>
+	</div>
+
+  <script type="text/javascript">
+
+
+
+    const logoutbutton = document.getElementById("index-logout");
+// When the login button is clicked, the following code is executed
+window.onload=function(){
+logoutbutton.addEventListener("click", (e) => {
+  
+    // Prevent the default submission of the form
+    e.preventDefault();
+    // Get the values input by the user in the form fields
+        localStorage.setItem('isLoggedIn', false);location.href='../index.html';
+
+ 
+})
+
+}
+
+  </script>
+
+</body>
+</html>
+
+
+
+
